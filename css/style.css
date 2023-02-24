@@ -1,19 +1,15 @@
+/* General Properties */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-#hero {
-    height: 90vh;
-    }
 
 .footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     }
-
-
 
 /* Login Page */
 .tetris-bg {
