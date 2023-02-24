@@ -23,9 +23,7 @@ cite {
 .tetris-bg {
     background-image: url("../media/Tetris-bg.jpg");
     background-repeat: no-repeat;
-    opacity: 0.9;
     background-size: cover;
-    color: white;
     display: flex;
     padding-top: 40px;
     padding-bottom: 40px;
