@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -25,10 +26,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#game_overview">What is Tetris?</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#rules">Game's Rules</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#tutorial">How to Play</a>
+                            <a class="nav-link" href="#feedback">Suggestions & Feedback</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Start Tetris</a>
@@ -45,27 +49,27 @@
                 <div class="container col-xxl-8 px-4 py-5 ">
                     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                         <div class="col-10 col-sm-8 col-lg-6">
-                            <img src="https://www.dropbox.com/s/25lk5ur2qvxms7o/AppLandingPage.png?raw=1"
-                                class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
-                                loading="lazy">
+                            <img src="./media/Tetris_GameBoy.jpg" class="d-block mx-lg-auto img-fluid rounded-3"
+                            alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
-                            <h1 class="display-5 fw-bold lh-1 mb-3">Feel the Nostalgia and Play the old Classic game
-                                Tetris
+                            <h1 class="display-6 fw-bold lh-1 mb-3">
+                                Experience Nostalgia: Play Classic Tetris
                             </h1>
-                            <p class="lead">A simple, fast and scalable bug tracking system that helps you manage bugs
-                                easily
-                                and deliver great products on time.
+                            <p class="lead">
+                                Immerse yourself in the deep sense of nostalgia and indulge in the timeless delight
+                                of playing the classic game Tetris.
                             </p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Demo</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg px-4">About</button>
+                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Start</button>
+                                <button type="button" class="btn btn-outline-primary btn-lg px-4">Rules</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="container-fluid bg-secondary" id="rules">
+            <hr class="container">
+            <!-- <section class="container-fluid bg-secondary" id="rules">
                 <p>Rules for playing</p>
 
                 <p></p>
@@ -74,9 +78,9 @@
                 <p>Rules for playing</p>
 
                 <p></p>
-            </section>
-            <section class="container-fluid">
-                <h2 class="text-primary text-center ">Tetris Game Overview</h2>
+            </section> -->
+            <section class="container" >
+                <h2 class="text-primary text-center" id="game_overview">Tetris Game Overview</h2>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -86,7 +90,21 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <p>
+                                    Tetris is a tile-matching puzzle video game originally designed and programmed by Russian
+                                    game designer Alexey Pajitnov. It was released on June 6, 1984, while Pajitnov was working 
+                                    for the Dorodnicyn Computing Centre of the Academy of Science of the USSR in Moscow. In Tetris, 
+                                    players manipulate tetrominoes—shapes made up of four square blocks that can be rotated and moved 
+                                    horizontally as they descend from the top of the screen. The goal of the game is to arrange the 
+                                    tetrominoes so that they form a solid horizontal line without any gaps.
+                                    <br/>
+                                    <br/>
+                                    <cite style="text-indent: -30px; padding-left: 30px">
+                                    Frank, A. (2022). Tetris. In The Encyclopedia of Video Games: The Culture, 
+                                    Technology, and Art of Gaming, 2nd Edition (Vol. 2, pp. 775-777). Santa Barbara, 
+                                    CA: ABC-CLIO.
+                                </cite>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +116,14 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <p>
+                                    In Tetris, you have to move and rotate different shaped blocks called "tetrominoes"
+                                    as they fall from the top of the screen. Your goal is to fit the tetrominoes 
+                                    together to create horizontal lines without any gaps. When you complete a 
+                                    line, it disappears, and you earn points. As you progress through the game, the 
+                                    tetrominoes will fall faster and faster, making it more challenging to fit them together. 
+                                    The game ends when the stack of tetrominoes reaches the top of the screen.
+                                </p>                            
                             </div>
                         </div>
                     </div>
@@ -111,44 +136,56 @@
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul>
-                                    <li>Item</li>
-                                    <li>Item</li>
-                                    <li>Item</li>
+                                    <li>
+                                        The name "Tetris" comes from a combination of the Greek word "tetra" (meaning "four") and Pajitnov's
+                                        favorite sport, tennis.
+                                    </li>
+                                    <li>
+                                        Tetris has been played on a variety of platforms, including arcade machines, home video game consoles, 
+                                        computers, and even calculators. 
+                                    </li>
+                                    <li>
+                                        The game's popularity skyrocketed in 1989 when it was bundled with Nintendo's Game Boy handheld console.
+                                        Tetris went on to become one of the most popular games on the platform, and it is still widely associated 
+                                        with the original Game Boy. 
+                                    </li>
+                                    <li>
+                                        Tetris has been studied by researchers for its effects on the brain. One study found that playing Tetris
+                                        can reduce the occurrence of intrusive memories, a symptom of post-traumatic stress disorder (PTSD). 
+                                    </li>
+                                    <li>
+                                        In 2020, the Tetris world record for the fastest time to clear 40 lines was set by Koryan, a Japanese player
+                                        who cleared the lines in just 16.85 seconds. 
+                                    </li>   
                                 </ul>
+                                <p>
+                                    References: <br>
+                                    <cite style="text-indent: -30px; padding-left: 30px">
+                                    Nintendo Life. (2020, June 6). Feature: 36 Years of Tetris - A Look Back at the History of Tetris and Its Many Iterations. Retrieved from https://www.nintendolife.com/news/2020/06/feature_36_years_of_tetris_-_a_look_back_at_the_history_of_tetris_and_its_many_iterations<br>
+                                    <cite style="text-indent: -30px; padding-left: 30px">
+                                    Holmes, E. A., James, E. L., Kilford, E. J., & Deeprose, C. (2010). Key steps in developing a cognitive vaccine against traumatic flashbacks: Visuospatial Tetris versus verbal Pub Quiz. PloS one, 5(11), e13706.<br>
+                                    </cite>
+                                    <cite style="text-indent: -30px; padding-left: 30px">
+                                    Guinness World Records. (2020, July 8). Fastest time to clear 40 lines on Tetris. Retrieved from https://www.guinnessworldrecords.com/world-records/690354-fastest-time-to-clear-40-lines-on-tetris
+                                    </cite>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Terms">Open Modal</button>
-            <div class="modal fade" id="Terms" role="dialog">
-                    <div class="modal-dialog"  tabindex="-1">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"></button>
-                                <h4 class="modal-title">Terms and Conditions</h4>
-                            </div>
-                            <div class="row modal-body">
-                                <p>I give the  full permission for Tetris to save my full name, the time I logged in to the game, and my score when leaving or exiting the game</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <section class="container">
-                <h3 class="section-heading inline">
+            <hr class="container">
+            <section class="container mt-5 mb-4">
+                <h3 class="section-heading inline" id="feedback">
                     For suggestions and Feedback:
                 </h3>
-                <button type="button" class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="feedback@tetris.com">Report an Error</button>
-                <button type="button" class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="suggestions@tetris.com">Give a Suggestion</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="btn btn-primary w-100 mt-3 modal-btn" data-bs-toggle="modal" data-bs-target="#feedback_modal" data-bs-whatever="feedback@tetris.com">Report an Error</button>
+                <button type="button" class="btn btn-primary w-100 mt-2 modal-btn" data-bs-toggle="modal" data-bs-target="#feedback_modal" data-bs-whatever="suggestions@tetris.com">Give a Suggestion</button>
+                <div class="modal fade" id="feedback_modal" tabindex="-1" aria-labelledby="Message" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <h5 class="modal-title" id="Message"></h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -181,22 +218,15 @@
     </footer>
     <!-- <?php include("footer.php"); ?> -->
     <script>
-        var exampleModal = document.getElementById('exampleModal')
-        exampleModal.addEventListener('show.bs.modal', function (event) {
-        // Button that triggered the modal
-        var button = event.relatedTarget
-        // Extract info from data-bs-* attributes
-        var recipient = button.getAttribute('data-bs-whatever')
-        // If necessary, you could initiate an AJAX request here
-        // and then do the updating in a callback.
-        //
-        // Update the modal's content.
-        var modalTitle = exampleModal.querySelector('.modal-title')
-        var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-        modalTitle.textContent = 'New message to ' + recipient
-        modalBodyInput.value = recipient
-        })
+        $(document).ready(function(){
+            $('.modal-btn').click(function(){
+                var recipient = document.querySelector(this).data-bs-whatever;
+                document.querySelector('#Message').innerText = 'New Message' + recipient;    
+                document.querySelector("#recipient-name").value = recipient;
+            })
+        });
+            
+        
     </script>
 </body>
 
