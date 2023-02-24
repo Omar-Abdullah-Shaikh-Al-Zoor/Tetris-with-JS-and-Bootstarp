@@ -7,3 +7,49 @@
     bottom: 0;
     width: 100%;
     }
+
+
+
+/* Login Page */
+.tetris-bg {
+    height: 100vh;
+}
+
+.tetris-bg {
+    background-image: url("../media/Tetris-bg.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-size: cover;
+    color: white;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 60vw;
+    padding: 15px;
+    margin: auto;
+    color: #212121;
+    border: 4px solid #ff993b;
+    border-radius: 25px;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.bg-tetris {
+    background-image: url("./media/Tetris-bg.jpg");
+    width: fit-content;
+}
