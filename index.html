@@ -179,7 +179,7 @@
             </section>
             <hr class="container">
             <section class="container mt-5 mb-4">
-                <h3 class="section-heading inline" id="feedback">
+                <h3 class="section-heading" id="feedback">
                     For suggestions and Feedback:
                 </h3>
                 <button type="button" class="btn btn-primary w-100 mt-3 modal-btn" data-bs-toggle="modal" data-bs-target="#feedback_modal" data-bs-whatever="feedback@tetris.com">Report an Error</button>
@@ -212,24 +212,23 @@
                 </div>
             </section>
         </article>
-
     </main>
-    <footer class=" mt-auto py-3 bg-light fixed-footer">
+    <footer class="mt-auto py-3 bg-light fixed-footer">
         <div class="container-fluid text-center">
             <span class="text-muted">Place sticky footer content here.</span>
         </div>
     </footer>
     <!-- <?php include("footer.php"); ?> -->
     <script>
-        $(document).ready(function(){
-            $('.modal-btn').click(function(){
-                var recipient = document.querySelector(this).data-bs-whatever;
-                document.querySelector('#Message').innerText = 'New Message' + recipient;    
-                document.querySelector("#recipient-name").value = recipient;
-            })
-        });
-            
-        
+        var feedback_modal = document.getElementById('feedback_modal')
+        feedback_modal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget
+        var recipient = button.getAttribute('data-bs-whatever')
+        var modalTitle = feedback_modal.querySelector('.modal-title')
+        var modalBodyInput = feedback_modal.querySelector('.modal-body input')
+        modalTitle.textContent = 'New message to ' + recipient
+        modalBodyInput.value = recipient
+        });        
     </script>
 </body>
 
