@@ -1,0 +1,9 @@
+#hero {
+    height: 90vh;
+    }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
