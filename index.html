@@ -14,7 +14,7 @@
 <body>
     <!-- <?php include("header.php"); ?> -->
     <header class="row">
-        <nav class="navbar navbar-expand-md navbar-light bg-light fs-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fs-5">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,12 +47,12 @@
         </nav>
     </header>
     <main class="row">
-        <article></article>>
+        <article>
             <section >
                 <div class="container col-xxl-8 px-4 py-5">
                     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                         <div class="col-10 col-sm-8 col-lg-6">
-                            <img src="./media/Tetris_GameBoy.jpg" class="d-block mx-lg-auto img-fluid rounded-3"
+                            <img src="./media/Tetris_GameBoy.jpg" class="d-block mx-lg-auto img-fluid rounded-3 align-self-md-auto"
                             alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
@@ -63,7 +63,7 @@
                                 Immerse yourself in the deep sense of nostalgia and indulge in the timeless delight
                                 of playing the classic game Tetris.
                             </p>
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <div class="d-grid gap-2 d-lg-flex justify-content-lg-start">
                                 <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Start</button>
                                 <button type="button" class="btn btn-outline-primary btn-lg px-4">Rules</button>
                             </div>
@@ -82,16 +82,16 @@
 
                 <p></p>
             </section> -->
-            <section class="container" >
+            <section class="container fs-5" >
                 <h2 class="text-primary text-center" id="game_overview">Tetris Game Overview</h2>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 What is Tetris?
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p>
                                     Tetris is a tile-matching puzzle video game originally designed and programmed by Russian
@@ -102,7 +102,7 @@
                                     tetrominoes so that they form a solid horizontal line without any gaps.
                                     <br/>
                                     <br/>
-                                    <cite style="text-indent: -30px; padding-left: 30px">
+                                    <cite>
                                     Frank, A. (2022). Tetris. In The Encyclopedia of Video Games: The Culture, 
                                     Technology, and Art of Gaming, 2nd Edition (Vol. 2, pp. 775-777). Santa Barbara, 
                                     CA: ABC-CLIO.
@@ -137,7 +137,7 @@
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body h5">
+                            <div class="accordion-body">
                                 <ul>
                                     <li>
                                         The name "Tetris" comes from a combination of the Greek word "tetra" (meaning "four") and Pajitnov's
@@ -163,12 +163,12 @@
                                 </ul>
                                 <p>
                                     References: <br>
-                                    <cite style="text-indent: -30px; padding-left: 30px">
+                                    <cite>
                                     Nintendo Life. (2020, June 6). Feature: 36 Years of Tetris - A Look Back at the History of Tetris and Its Many Iterations. Retrieved from https://www.nintendolife.com/news/2020/06/feature_36_years_of_tetris_-_a_look_back_at_the_history_of_tetris_and_its_many_iterations<br>
-                                    <cite style="text-indent: -30px; padding-left: 30px">
+                                    <cite>
                                     Holmes, E. A., James, E. L., Kilford, E. J., & Deeprose, C. (2010). Key steps in developing a cognitive vaccine against traumatic flashbacks: Visuospatial Tetris versus verbal Pub Quiz. PloS one, 5(11), e13706.<br>
                                     </cite>
-                                    <cite style="text-indent: -30px; padding-left: 30px">
+                                    <cite>
                                     Guinness World Records. (2020, July 8). Fastest time to clear 40 lines on Tetris. Retrieved from https://www.guinnessworldrecords.com/world-records/690354-fastest-time-to-clear-40-lines-on-tetris
                                     </cite>
                                 </p>
@@ -182,8 +182,10 @@
                 <h3 class="section-heading" id="feedback">
                     For suggestions and Feedback:
                 </h3>
-                <button type="button" class="btn btn-primary w-100 mt-3 modal-btn" data-bs-toggle="modal" data-bs-target="#feedback_modal" data-bs-whatever="feedback@tetris.com">Report an Error</button>
-                <button type="button" class="btn btn-primary w-100 mt-2 modal-btn" data-bs-toggle="modal" data-bs-target="#feedback_modal" data-bs-whatever="suggestions@tetris.com">Give a Suggestion</button>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary w-50 mt-2 modal-btn" data-bs-toggle="modal" data-bs-target="#feedback_modal" data-bs-whatever="suggestions@tetris.com">Give a Suggestion</button>
+                    <button type="button" class="btn btn-danger btn-primary w-50 mt-3 modal-btn text-center" data-bs-toggle="modal" data-bs-target="#feedback_modal" data-bs-whatever="feedback@tetris.com">Report an Error</button>
+                </div>
                 <div class="modal fade" id="feedback_modal" tabindex="-1" aria-labelledby="Message" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">

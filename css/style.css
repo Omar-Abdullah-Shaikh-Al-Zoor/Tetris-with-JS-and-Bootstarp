@@ -16,6 +16,10 @@
     height: 100vh;
 }
 
+cite {
+    text-indent: -30px; 
+    padding-left: 30px;
+}
 .tetris-bg {
     background-image: url("../media/Tetris-bg.jpg");
     background-repeat: no-repeat;
