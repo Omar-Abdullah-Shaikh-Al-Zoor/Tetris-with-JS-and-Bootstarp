@@ -11,6 +11,10 @@
     width: 100%;
     }
 
+
+.rules-button:hover {
+    color: white;
+}
 /* Login Page */
 .tetris-bg {
     height: 100vh;
