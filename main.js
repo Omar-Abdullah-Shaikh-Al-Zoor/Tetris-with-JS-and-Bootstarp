@@ -9,6 +9,15 @@ ctx.canvas.height = ROWS * BLOCK_SIZE;
 // Scale blocks
 ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
 let board = null;
+eventListener()
+
+const moves = {
+  [KEY.UP]: p => board.rotate(p),            
+  [KEY.SPACE]: p => ({ ...p, y: p.y + 1 }),
+  [KEY.LEFT]: p => ({ ...p, x: p.x - 1 }),
+  [KEY.RIGHT]: p => ({ ...p, x: p.x + 1 }),
+  [KEY.DOWN]: p => ({ ...p, y: p.y + 1 })
+};
 
 
 function eventListener(){
@@ -45,11 +54,9 @@ function eventListener(){
           board.piece.draw();
       }
       }
-    }
-  });
+    }}
+  );
 }
-
-eventListener()
 
 function play() {
     board = new Board(ctx);
@@ -57,6 +64,6 @@ function play() {
 
     const { width, height } = ctx.canvas; 
     ctx.clearRect(0, 0, width, height);
-    board.piece.draw();
+    board.animate();
 
   }
