@@ -12,14 +12,11 @@ class Board {
       );
     }
 
-    
-    insideWalls(x) {
-      return x >= 0 && x < COLS;
+  
+    insideBorders(x,y){
+      return x >= 0 && x < COLS && y <= ROWS;
     }
 
-    aboveFloor(y) {
-      return y <= ROWS;
-    }
 
     valid(p) {
       return p.shape.every((row, dy) => {
@@ -27,10 +24,8 @@ class Board {
           let x = p.x + dx;
           let y = p.y + dy;
           return (
-            // this.isEmpty(value) ||
-           (this.insideWalls(x) &&
-            this.aboveFloor(y)
-          ));
+          this.insideBorders(x,y)
+          );
           });
       });
     }

@@ -9,6 +9,7 @@ const PIECES = [[[0,0,0],[1,1,1],[0,0,0]], [[1,0,0],[1,1,1],[0,0,0]], [[0,0,1],[
 const COLORS =  ['blue', 'red', 'yellow', 'green', 'orange', 'cyan', 'purple']
 
 const KEY = {
+    SPACE: 32,
     LEFT: 37,
     RIGHT: 39,
     DOWN: 40
@@ -16,7 +17,8 @@ const KEY = {
 Object.freeze(KEY);
 
 const moves = {
-    [KEY.LEFT]:  p => ({ ...p, x: p.x - 1 }),
+    [KEY.SPACE]: p => ({ ...p, y: p.y + 1 }),
+    [KEY.LEFT]: p => ({ ...p, x: p.x - 1 }),
     [KEY.RIGHT]: p => ({ ...p, x: p.x + 1 }),
-    [KEY.DOWN]:    p => ({ ...p, y: p.y + 1 })
+    [KEY.DOWN]: p => ({ ...p, y: p.y + 1 })
   };
