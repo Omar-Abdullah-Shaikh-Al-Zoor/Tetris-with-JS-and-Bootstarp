@@ -1,3 +1,11 @@
+
+const params = new URLSearchParams(window.location.search);
+
+var username=params.get('username'); 
+var Full_name=params.get('full-name');
+
+
+
 let canvas;
 let ctx;
 let GameBoard_arr_height = 20;
