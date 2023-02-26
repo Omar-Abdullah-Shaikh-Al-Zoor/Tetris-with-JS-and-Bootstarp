@@ -34,13 +34,13 @@ document.addEventListener("DOMContentLoaded", SetupCanvas);
 
 function SetupCanvas(){
     canvas = document.getElementById("game-canvas");
-    let ctx = canvas.getContext("2d");
-    ctx.width = 936;
-    ctx.height = 956;
+    ctx = canvas.getContext("2d");
+    canvas.width = 936;
+    canvas.height = 956;
     ctx.scale(2,2);
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.strokeStyle = "#black";
+    ctx.strokeStyle = "black";
     ctx.strokeRect(8, 8, 280, 462);
     document.addEventListener("keydown", OnkeyPress);
     Create_Pieces();
