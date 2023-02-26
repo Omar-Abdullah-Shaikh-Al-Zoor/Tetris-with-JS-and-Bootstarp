@@ -19,14 +19,6 @@ function play() {
     ctx.clearRect(0, 0, width, height);
     board.piece.draw();
 
-    const moves = {
-      [KEY.LEFT]:  p => ({ ...p, x: p.x - 1 }),
-      [KEY.RIGHT]: p => ({ ...p, x: p.x + 1 }),
-      [KEY.DOWN]:    p => ({ ...p, y: p.y + 1 })
-    };
-
-    const p = this.moves[event.key](this.piece);
-
     document.addEventListener('keydown', event => {
       if (moves[event.keyCode]) {  
         // Stop the event from bubbling.
